@@ -13,11 +13,8 @@ const Home = () => {
 		<h1 className="text-4xl font-bold leading-none sm:text-5xl">
 			<span className="dark:text-violet-400"></span>
 		</h1>
-		<p className="px-8 mt-8 mb-12 text-lg">Cupiditate minima voluptate temporibus quia? Architecto beatae esse ab amet vero eaque explicabo!</p>
-		<div className="flex flex-wrap justify-center">
-			<button className="px-8 py-3 m-2 text-lg font-semibold rounded dark:bg-violet-400 dark:text-gray-900">Get started</button>
-			<button className="px-8 py-3 m-2 text-lg border rounded dark:text-gray-50 dark:border-gray-700">Learn more</button>
-		</div>
+		<p className="px-8 mt-8 mb-12 text-4xl text-white text-bold">My React site design is so beautiful that it attracts visitors easily!</p>
+        <button className=''><span className='px-8 block w-full mt-4 py-3 font-semibold rounded-full bg-cyan-200 text-gray-800 hover:bg-cyan-400'>Contact Me</span></button>
 	</div>
 </section>
         </div>
