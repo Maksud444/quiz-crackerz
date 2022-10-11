@@ -1,17 +1,22 @@
 import React, { useState } from 'react';
 import Question from './Question';
 import './Quiz.css'
+import { toast } from 'react-toastify';
+
+
+
+
 const Quiz = ({TopicDetail}) => {
    
    
     const {id,question,options,correctAnswer}= TopicDetail;
     // console.log(TopicDetail)
-    const handleAns = (correct)=>{
-        if(correct=== correctAnswer ){
-            console.log('correct')
+    const handleAns = (correct) => {
+        if (correct === correctAnswer) {
+            toast.success('curert', { autoClose: 500 })
         }
-        else{
-            console.log('notcorrect')
+        else {
+            toast.warning('incorrent!', { autoClose: 500 })
         }
     }
     return (
