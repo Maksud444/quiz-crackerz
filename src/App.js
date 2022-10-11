@@ -9,6 +9,7 @@ import Blog from './Component/Blog'
 import TopicDetails from './Component/TopicDetails';
 import Quiz from './Component/Quiz';
 import Question from './Component/Question';
+import ErrorPage from './Component/ErrorPage';
 
 function App() {
   const router = createBrowserRouter([
@@ -16,6 +17,7 @@ function App() {
     {
       path:'/',
       element:<Main></Main>,
+      errorElement: <ErrorPage></ErrorPage>,
       
       children:[
         {
@@ -29,6 +31,7 @@ function App() {
         },
         {
           path:'/statistics',
+          loader: ()=> fetch('https://openapi.programming-hero.com/api/quiz'),
           element:<Statistics></Statistics>
         },
         {
