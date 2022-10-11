@@ -1,12 +1,16 @@
 import React from 'react';
 
-const Quiz = ({quiz}) => {
-    const {questions}= quiz.data;
-    console.log(questions)
+
+const Quiz = ({TopicDetail}) => {
+    const {id,question,options,correctAnswer}= TopicDetail;
+    console.log(TopicDetail)
     return (
-        <div>
-            <h3>topi qus:{questions}</h3>
-        </div>
+       <div>
+        <h2>ans:{correctAnswer}</h2>
+     
+
+
+       </div>
     );
 };
 

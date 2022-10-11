@@ -7,6 +7,7 @@ import Topic from './Component/Topic'
 import Statistics from './Component/Statistics'
 import Blog from './Component/Blog'
 import TopicDetails from './Component/TopicDetails';
+import Quiz from './Component/Quiz';
 
 function App() {
   const router = createBrowserRouter([
@@ -18,7 +19,7 @@ function App() {
       children:[
         {
           path:'/',
-          loader: ()=> fetch('quiz.json'),
+          loader: ()=> fetch('https://openapi.programming-hero.com/api/quiz'),
           element: <Home></Home>
         },
         {
@@ -40,6 +41,7 @@ function App() {
           },
           element:<TopicDetails></TopicDetails>
         }
+       
       ]
     }
   ]);
