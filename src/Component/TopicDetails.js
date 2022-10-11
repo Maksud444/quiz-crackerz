@@ -7,13 +7,16 @@ const TopicDetails = () => {
     console.log(topic)
     return (
         <div>
-            <h1 className='text-2xl'>Slelect Your Quiz</h1>
-            {
+            <h1 className='text-4xl text-bold bg-teal-200 m-auto p-6'>Select Your Correct Answer </h1>
+            <h3>Score:<span>0</span></h3>
+        <div className='grid lg:grid-cols-1 md:grid-cols-2 sm:grid-cols-1 m-10'>
+        {
                 topic.data.questions.map(TopicDetail => <Quiz
                 key={TopicDetail.id}
                 TopicDetail={TopicDetail}
                 ></Quiz>)
             }
+        </div>
         </div>
     );
 };
