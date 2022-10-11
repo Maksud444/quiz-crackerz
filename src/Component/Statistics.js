@@ -7,14 +7,14 @@ const Statistics = () => {
     return (
         <div className='flex justify-center '>
        
-
+       <ResponsiveContainer width="100%" aspect={3}>
         <LineChart width={500} height={400} data={reacharts.data}>
             <Line type="name" dataKey="total" stroke="#82ca9d" />
             <XAxis dataKey="name" />
             <YAxis />
             <Tooltip></Tooltip>
         </LineChart>
-       
+        </ResponsiveContainer>
         
     </div>
     );
