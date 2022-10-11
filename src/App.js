@@ -8,6 +8,7 @@ import Statistics from './Component/Statistics'
 import Blog from './Component/Blog'
 import TopicDetails from './Component/TopicDetails';
 import Quiz from './Component/Quiz';
+import Question from './Component/Question';
 
 function App() {
   const router = createBrowserRouter([
